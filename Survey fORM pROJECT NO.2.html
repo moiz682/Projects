@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+        background-color: blueviolet;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0,0,0,0.5);
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;                 
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Falcon Survey Form</h1> 
+            <p id="discription" class="discription text-center">
+                Thank you for taking the time to help us to improve the platform
+            </p>
+        </header>
+        <form id="survey form">
+            <div class="form group">
+            <label id="name-label" 
+            for="name">Name</label><hr>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required /><hr>
+            <div class="form-group">
+                <label id="email-label"
+                for="email">Email</label>
+                <input 
+                type="email"
+                name="email"
+                id="form-control"
+                class="form-control"
+                placeholder="Enter Your Email"
+                requird />
+            </div><hr>
+
+            <div class="form-group">
+                <label id="number-label"
+                for="number">
+            Age<span class="clue">(optional)
+              
+            </span> </label>
+         <input 
+         type="number"
+         name="age"
+         id="number" 
+         min="10"
+         max="99"
+         class="form-control"
+         placeholder="Age">  
+        </div><hr>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control"required>
+                <option disabled selected
+                value="student">Student</option>
+                <option value="job">Full time Job</option>
+                <option value="Learner">Full time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+            </select>
+        </div><hr>
+        <div class="form-group">
+         <p>Would you recommend <i>Falcon Surver Camp</i> </p>
+         <label>
+            <input 
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            calss="input-radio"
+            checked>Definitely
+         </label> <hr>  
+         <label>
+            <input name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio">Maybe </label>
+            <label>
+                <input type="radio"
+                class="input-radio"
+                value="not-sure"
+                name="user-recommend">NOT SURE
+            </label>
+            
+        </div> <hr>
+        <div class="form-group">
+            <p> Whqat is your favourite feature of <strong>Falcon survey camp?</strong></p>
+            <select id="most-like"
+            name="most like" class="form-control" requied>
+        <option disabled selected value>Select an option
+        </option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open source">Open Source</option>
+        </select>
+        </div>     <hr> 
+        <div class="form-groyup">
+            <p>Would you like to see improved
+            <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input 
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox">Front-End Projects
+            </label><hr>
+            <br>
+            <label>
+                <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox">Back-end-projects
+            </label><hr>
+            <br>
+            <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Data Visualization</label><br>
+        <label>
+            <input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Challenges</label><br><hr>
+        <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Open Source Community</label
+      ><br><hr>
+      <label
+      ><input
+        name="prefer"
+        value="gitter-help-rooms"
+        type="checkbox"
+        class="input-checkbox"
+      />Gitter help rooms</label
+    ><br><hr>
+    <label
+      ><input
+        name="prefer"
+        value="videos"
+        type="checkbox"
+        class="input-checkbox"
+      />Videos</label
+    ><br><hr>
+    <label
+      ><input
+        name="prefer"
+        value="city-meetups"
+        type="checkbox"
+        class="input-checkbox"
+      />City Meetups</label
+    ><br><hr>
+    <label
+      ><input
+        name="prefer"
+        value="wiki"
+        type="checkbox"
+        class="input-checkbox"
+      />Wiki</label
+    ><br><hr>
+    <label
+      ><input
+        name="prefer"
+        value="forum"
+        type="checkbox"
+        class="input-checkbox"
+      />Forum</label
+    ><br><hr>
+    <label
+      ><input
+        name="prefer"
+        value="additional-courses"
+        type="checkbox"
+        class="input-checkbox"
+      />Additional Courses</label>
+        </div><hr>
+        <div class="form-group">
+            <p>Any Comments or Suggestions</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter Your Comment here..."></textarea>
+        </div><hr>
+        <div class="form-group">
+            <button type="submit" id="submit"
+            class="submit-button">Submit</button>
+        </div><hr>
+        </form>
+    </div>
+    [<small> Developed by @<a href="#">Moiz Aftab Bajwa]</a>
+    </small>
+    
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Event</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+        background-color: slateblue;
+            
+        }
+        section .leftBox{
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        section .leftBox .content {
+            color: rgb(143, 131, 131);
+            background: rgba(197, 83, 83, 0.5);
+            padding: 40px;
+            transition: .5s;
+           }
+           section .leftBox. content:hover{
+            background: #e91e63;
+           }
+           section. leftbox.content h1{
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+           }
+           section .leftbox .content p{
+            margin: 10px 0 0;
+            padding: 0;
+           }
+           section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(44, 41, 41, 0.5);
+            float: right;
+            box-sizing: border-box;
+           }
+           section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+           }
+           section .events ul li{
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+           }
+           section .events ul li .time{
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+           }
+           section .events ul li:hover .time {
+            background: #1e7de9;
+        }
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+        section .events ul li .details a:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="leftbox">
+            <div class="content">
+                <h1>Techweek’s Events And Shows</h1>
+                <p>The massive technology conference Techweek references past attendees and sponsors to illustrate how popular and illustrious the event is. If you don’t have big names to reference you can include testimonials and reviews from past attendees to create the same effect. One study showed that 79% of customers trust online reviews as much as personal recommendations.Monthly stand-up night the Comedy Cabaret enters guests into a free raffle for beer when they buy a ticket. This bonus creates an extra incentive for potential attendees, and pushes them from the ‘maybe’ category to ‘definitely going’. The event description is also funny and light-hearted — perfectly on message for a comedy event.
+
+                    “Techweek curates exciting programming that allows a global spotlight to shine on each ecosystem and its leaders. Past speakers include Rahm Emanuel, Travis Kalanick (CEO, Uber), Craig Newmark (Founder, Craigslist), Barney Harford (CEO, Orbitz), and Chuck Templeton (Founder, OpenTable). The Techweek expo has gathered more than 200 sponsors, including companies such as Google, Groupon, Microsoft, Motorola, Redbox, Uber, and Wordpress.”
+                    “The next outstanding show is Monday March 23rd at 8pm. The Comedy Cabaret offers a Laffy Raffy Raffle. To enter all you have to do is RSVP/Join this event, and then on the night of show, be present in the fesh and your name will be entered into a draw for free beer! (DISCLAIMER: If you’re not there when we draw your name you forfeit your mouth-watering super-thirst quenching beer. Also must 19 years of age or older to enter).”
+                    “Fundraising proceeds will directly support Reel Asian’s year-round and festival youth programs that help culturally diverse and newcomer youth from the GTA examine issues of identity and belonging through media arts, while providing leadership opportunities, education and job-skills training in film and creative production."</p>
+            </div>
+        </div>
+    <div class="events">
+        <ul>
+            <li>
+                <div class="time">
+                    <h2>
+                        15 <br><span>March</span>
+                    </h2>
+                </div>
+                <div class="details">
+                    <h3>Charity</h3>
+                    <p>People love giving to charity, and love telling others that they’re giving. Reel Asian Film Festival taps into this by describing in detail what they will do with your money.
+
+                        “Fundraising proceeds will directly support Reel Asian’s year-round ”</p>
+                        <a href="#">View Details</a>
+                </div>
+                <div style="clear:both;"></div>    
+            </li>
+            <li>
+                <div class="time">
+                    <h2>
+                        27 <br> <span>May</span>
+                    </h2>
+                </div>
+                <div class="details">
+                    <h3>Urgency & Fomo</h3>
+                    <p>HMV creates a sense of urgency in potential attendees by referencing the event capacity”</p>
+                        <a href="#">View Details</a>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+
+            <li> 
+                <div class="time">
+                <h2>12<br><span>August</span>
+                </h2>
+                </div>
+                <div class="details">
+                    <h3>
+                      Where is the event heappening?  
+                    </h3>
+                    <p>
+                        
+                        With the idea of imparting programming
+                        knowledge,Whether programming
+                        excites you or you feel stifled,
+                        how to ace data structures and
+                        algorithms, GeeksforGeeks is a
+                        one-stop solution.
+                    </p>
+                    <a href="#">View Details></a>
+                </div>
+                <div style="clear:both"></div>
+            </li>
+        </ul>
+    </div>
+    </section>
+</body>
+</html>
